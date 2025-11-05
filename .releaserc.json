@@ -12,7 +12,12 @@
           { "type": "style", "release": "patch" },
           { "type": "test", "release": "patch" }
         ],
-        "defaultReleaseType": "patch"
+        "defaultReleaseType": "patch",
+        "analyzeCommits": {
+          "parserOpts": {
+            "noteKeywords": ["BREAKING CHANGE"]
+          }
+        }
       }
     ],
     "@semantic-release/release-notes-generator",
